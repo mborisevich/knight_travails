@@ -92,5 +92,7 @@ function knightMoves(start,end){
 //let move6 = knightMoves([start[0] - 1, start[1] -2], end)
 //let move7 = knightMoves([start[0] + 1, start[1] - 2], end)
 //let move8 = knightMoves([start[0] + 2, start[1] - 1], end)
-console.log(knightMoves([0,0],[3,3]))
+const startTime = performance.now()
 console.log(knightMoves([0,0],[7,7]))
+const endTime = performance.now()
+console.log(`Execution time: ${endTime - startTime}`)
