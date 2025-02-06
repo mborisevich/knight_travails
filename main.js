@@ -40,7 +40,6 @@ function knightMoves(start,end){
     let firstItem
     let found = 0
     while (queueList.length > 0 && found == 0){
-        queueList.sort((a,b) => a.length - b.length)
         console.log(queueList)
         firstItem = queueList.shift()
         if (firstItem[firstItem.length - 1][0] == end[0] && firstItem[firstItem.length - 1][1] == end[1] ){
